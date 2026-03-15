@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { Calculator, Package, Search, TrendingUp, Store } from 'lucide-react';
 import { Layout } from '../components/Layout';
 import { RadarProdutos } from '../components/RadarProdutos';
-import { AIChat } from '../components/AIChat';
 import { ads } from '../data/ads';
 import { radarProducts } from '../data/radar';
 import type { AdItem } from '../data/ads';
@@ -142,9 +141,6 @@ export function Home() {
 
           {/* Radar de Produtos */}
           <RadarProdutos />
-
-          {/* AI Chat */}
-          <AIChat />
 
           {/* Ad Cards */}
           <div className="mb-6">

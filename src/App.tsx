@@ -9,12 +9,14 @@ import { AnuncioDetalhe } from './pages/AnuncioDetalhe';
 import { Projetos } from './pages/Projetos';
 import { ProjetoNovo } from './pages/ProjetoNovo';
 import { ProjetoDetalhe } from './pages/ProjetoDetalhe';
+import { Chat } from './pages/Chat';
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/chat" element={<Chat />} />
         <Route path="/buscador" element={<Buscador />} />
         <Route path="/em-alta" element={<EmAlta />} />
         <Route path="/fornecedores" element={<Fornecedores />} />
