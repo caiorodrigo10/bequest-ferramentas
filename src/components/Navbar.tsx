@@ -1,9 +1,11 @@
 import { NavLink } from 'react-router-dom';
+import { Store } from 'lucide-react';
 
 const navItems = [
   { to: '/', label: 'Início' },
   { to: '/buscador', label: 'Buscador' },
   { to: '/em-alta', label: 'Em Alta' },
+  { to: '/lojas', label: 'Lojas', isNew: true },
   { to: '/fornecedores', label: 'Fornecedores' },
   { to: '/calculadora', label: 'Calculadora' },
 ];
@@ -20,23 +22,41 @@ export function Navbar() {
           />
         </NavLink>
 
-        <div className="hidden xl:flex items-center space-x-8">
+        <div className="hidden xl:flex items-center space-x-6">
           {navItems.map((item) => (
             <NavLink
               key={item.to}
               to={item.to}
               end={item.to === '/'}
               className={({ isActive }) =>
-                `uppercase text-sm font-medium transition-colors ${
+                `flex items-center gap-1.5 uppercase text-sm font-medium transition-colors ${
                   isActive
                     ? 'text-white border-b-2 border-[#3F1DFF] pb-1'
                     : 'text-gray-400 hover:text-white'
                 }`
               }
             >
+              {item.to === '/lojas' && <Store className="w-3.5 h-3.5" />}
               {item.label}
+              {item.isNew && (
+                <span className="bg-green-500 text-white text-[9px] font-bold px-1 py-0.5 rounded">
+                  NOVO
+                </span>
+              )}
             </NavLink>
           ))}
+
+          {/* Separador */}
+          <div className="h-px bg-[#252525] w-px self-stretch my-2" />
+
+          {/* Magic Search — bloqueado */}
+          <span
+            className="flex items-center gap-1.5 uppercase text-sm font-medium text-gray-400 opacity-40 cursor-not-allowed pointer-events-none"
+            title="Disponível em breve"
+          >
+            ✨ Magic Search
+            <span className="text-[10px]">🔒</span>
+          </span>
         </div>
 
         {/* Avatar mockado */}

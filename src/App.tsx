@@ -4,6 +4,8 @@ import { Buscador } from './pages/Buscador';
 import { EmAlta } from './pages/EmAlta';
 import { Fornecedores } from './pages/Fornecedores';
 import { Calculadora } from './pages/Calculadora';
+import { Lojas } from './pages/Lojas';
+import { AnuncioDetalhe } from './pages/AnuncioDetalhe';
 
 export default function App() {
   return (
@@ -14,6 +16,8 @@ export default function App() {
         <Route path="/em-alta" element={<EmAlta />} />
         <Route path="/fornecedores" element={<Fornecedores />} />
         <Route path="/calculadora" element={<Calculadora />} />
+        <Route path="/lojas" element={<Lojas />} />
+        <Route path="/anuncios/:id" element={<AnuncioDetalhe />} />
       </Routes>
     </BrowserRouter>
   );
