@@ -6,6 +6,9 @@ import { Fornecedores } from './pages/Fornecedores';
 import { Calculadora } from './pages/Calculadora';
 import { Lojas } from './pages/Lojas';
 import { AnuncioDetalhe } from './pages/AnuncioDetalhe';
+import { Projetos } from './pages/Projetos';
+import { ProjetoNovo } from './pages/ProjetoNovo';
+import { ProjetoDetalhe } from './pages/ProjetoDetalhe';
 
 export default function App() {
   return (
@@ -18,6 +21,9 @@ export default function App() {
         <Route path="/calculadora" element={<Calculadora />} />
         <Route path="/lojas" element={<Lojas />} />
         <Route path="/anuncios/:id" element={<AnuncioDetalhe />} />
+        <Route path="/projetos" element={<Projetos />} />
+        <Route path="/projetos/novo" element={<ProjetoNovo />} />
+        <Route path="/projetos/:id" element={<ProjetoDetalhe />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,13 +1,18 @@
 import { NavLink } from 'react-router-dom';
-import { Store } from 'lucide-react';
+import { Store, FolderKanban } from 'lucide-react';
 
 const navItems = [
   { to: '/', label: 'Início' },
-  { to: '/buscador', label: 'Buscador' },
-  { to: '/em-alta', label: 'Em Alta' },
-  { to: '/lojas', label: 'Lojas', isNew: true },
-  { to: '/fornecedores', label: 'Fornecedores' },
+  { to: '/projetos', label: 'Projetos', icon: 'projetos', isNew: true },
+  { to: '/em-alta', label: 'Anúncios' },
+  { to: '/lojas', label: 'Lojas', icon: 'lojas' },
   { to: '/calculadora', label: 'Calculadora' },
+  { to: '/fornecedores', label: 'Fornecedores' },
+];
+
+const comingSoon = [
+  '✨ Magic Search',
+  '🔍 Buscador',
 ];
 
 export function Navbar() {
@@ -36,27 +41,29 @@ export function Navbar() {
                 }`
               }
             >
-              {item.to === '/lojas' && <Store className="w-3.5 h-3.5" />}
+              {item.icon === 'lojas' && <Store className="w-3.5 h-3.5" />}
+              {item.icon === 'projetos' && <FolderKanban className="w-3.5 h-3.5" />}
               {item.label}
               {item.isNew && (
-                <span className="bg-green-500 text-white text-[9px] font-bold px-1 py-0.5 rounded">
-                  NOVO
-                </span>
+                <span className="bg-green-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full ml-1">NOVO</span>
               )}
             </NavLink>
           ))}
 
-          {/* Separador */}
+          {/* Separador antes dos items em breve */}
           <div className="h-px bg-[#252525] w-px self-stretch my-2" />
 
-          {/* Magic Search — bloqueado */}
-          <span
-            className="flex items-center gap-1.5 uppercase text-sm font-medium text-gray-400 opacity-40 cursor-not-allowed pointer-events-none"
-            title="Disponível em breve"
-          >
-            ✨ Magic Search
-            <span className="text-[10px]">🔒</span>
-          </span>
+          {/* Em breve */}
+          {comingSoon.map(label => (
+            <span
+              key={label}
+              className="flex items-center gap-1.5 uppercase text-sm font-medium text-gray-400 opacity-40 cursor-not-allowed pointer-events-none"
+              title="Disponível em breve"
+            >
+              {label}
+              <span className="text-[10px]">🔒</span>
+            </span>
+          ))}
         </div>
 
         {/* Avatar mockado */}
