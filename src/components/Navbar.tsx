@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import { User } from 'lucide-react';
 
 const navItems = [
   { to: '/', label: 'Início' },
@@ -40,8 +39,12 @@ export function Navbar() {
           ))}
         </div>
 
-        <div className="w-8 h-8 rounded-lg bg-[#3F1DFF]/20 border border-[#3F1DFF]/30 flex items-center justify-center">
-          <User className="w-4 h-4 text-[#3F1DFF]" />
+        {/* Avatar mockado */}
+        <div className="flex items-center gap-3">
+          <span className="hidden md:block text-sm text-gray-400">João Dropshipper</span>
+          <div className="w-9 h-9 rounded-full bg-[#3F1DFF]/20 border border-[#3F1DFF]/30 flex items-center justify-center cursor-pointer hover:bg-[#3F1DFF]/30 transition-colors">
+            <span className="text-xs font-bold text-white">JD</span>
+          </div>
         </div>
       </div>
     </nav>

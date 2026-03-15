@@ -14,7 +14,7 @@ export const products: Product[] = [
   {
     id: 'prod-001',
     name: 'Fone de Ouvido Bluetooth TWS Pro',
-    image: 'https://picsum.photos/seed/prod1/400/400',
+    image: '/images/products/prod-001.jpg',
     price: 12.99,
     rating: 4.7,
     orders: 45200,
@@ -25,7 +25,7 @@ export const products: Product[] = [
   {
     id: 'prod-002',
     name: 'Fita LED RGB Smart Wi-Fi 5m',
-    image: 'https://picsum.photos/seed/prod2/400/400',
+    image: '/images/products/prod-002.jpg',
     price: 8.50,
     rating: 4.5,
     orders: 32100,
@@ -36,7 +36,7 @@ export const products: Product[] = [
   {
     id: 'prod-003',
     name: 'Mini Liquidificador Portátil USB',
-    image: 'https://picsum.photos/seed/prod3/400/400',
+    image: '/images/products/prod-003.jpg',
     price: 9.90,
     rating: 4.6,
     orders: 28500,
@@ -47,7 +47,7 @@ export const products: Product[] = [
   {
     id: 'prod-004',
     name: 'Relógio Smartwatch Fitness Tracker',
-    image: 'https://picsum.photos/seed/prod4/400/400',
+    image: '/images/products/prod-004.jpg',
     price: 18.50,
     rating: 4.4,
     orders: 19800,
@@ -58,7 +58,7 @@ export const products: Product[] = [
   {
     id: 'prod-005',
     name: 'Secador de Cabelo Iônico Profissional',
-    image: 'https://picsum.photos/seed/prod5/400/400',
+    image: '/images/products/prod-005.jpg',
     price: 15.00,
     rating: 4.8,
     orders: 22300,
@@ -69,7 +69,7 @@ export const products: Product[] = [
   {
     id: 'prod-006',
     name: 'Pochete Esportiva Impermeável',
-    image: 'https://picsum.photos/seed/prod6/400/400',
+    image: '/images/products/prod-006.jpg',
     price: 5.20,
     rating: 4.3,
     orders: 41000,
@@ -80,7 +80,7 @@ export const products: Product[] = [
   {
     id: 'prod-007',
     name: 'Carregador Magnético Wireless 3 em 1',
-    image: 'https://picsum.photos/seed/prod7/400/400',
+    image: '/images/products/prod-007.jpg',
     price: 14.80,
     rating: 4.6,
     orders: 15600,
@@ -91,7 +91,7 @@ export const products: Product[] = [
   {
     id: 'prod-008',
     name: 'Óculos de Sol Polarizado UV400',
-    image: 'https://picsum.photos/seed/prod8/400/400',
+    image: '/images/products/prod-008.jpg',
     price: 6.50,
     rating: 4.2,
     orders: 38700,
@@ -102,7 +102,7 @@ export const products: Product[] = [
   {
     id: 'prod-009',
     name: 'Escova Facial de Silicone Elétrica',
-    image: 'https://picsum.photos/seed/prod9/400/400',
+    image: '/images/products/prod-009.jpg',
     price: 11.20,
     rating: 4.7,
     orders: 17400,
@@ -113,7 +113,7 @@ export const products: Product[] = [
   {
     id: 'prod-010',
     name: 'Lâmpada Smart LED Alexa/Google',
-    image: 'https://picsum.photos/seed/prod10/400/400',
+    image: '/images/products/prod-010.jpg',
     price: 7.80,
     rating: 4.5,
     orders: 25800,
@@ -124,7 +124,7 @@ export const products: Product[] = [
   {
     id: 'prod-011',
     name: 'Mochila Anti-Furto USB Charge',
-    image: 'https://picsum.photos/seed/prod11/400/400',
+    image: '/images/products/prod-011.jpg',
     price: 22.00,
     rating: 4.6,
     orders: 12300,
@@ -135,7 +135,7 @@ export const products: Product[] = [
   {
     id: 'prod-012',
     name: 'Ring Light LED 26cm com Tripé',
-    image: 'https://picsum.photos/seed/prod12/400/400',
+    image: '/images/products/prod-012.jpg',
     price: 13.50,
     rating: 4.4,
     orders: 31200,
@@ -146,7 +146,7 @@ export const products: Product[] = [
   {
     id: 'prod-013',
     name: 'Garrafa Térmica Inteligente Display',
-    image: 'https://picsum.photos/seed/prod13/400/400',
+    image: '/images/products/prod-013.jpg',
     price: 8.90,
     rating: 4.3,
     orders: 20100,
@@ -157,7 +157,7 @@ export const products: Product[] = [
   {
     id: 'prod-014',
     name: 'Cortador de Cabelo Elétrico Sem Fio',
-    image: 'https://picsum.photos/seed/prod14/400/400',
+    image: '/images/products/prod-014.jpg',
     price: 16.70,
     rating: 4.8,
     orders: 14500,
@@ -168,7 +168,7 @@ export const products: Product[] = [
   {
     id: 'prod-015',
     name: 'Suporte Celular Carro Magnético',
-    image: 'https://picsum.photos/seed/prod15/400/400',
+    image: '/images/products/prod-015.jpg',
     price: 4.30,
     rating: 4.1,
     orders: 48900,
@@ -179,7 +179,7 @@ export const products: Product[] = [
   {
     id: 'prod-016',
     name: 'Tapete de Yoga Antiderrapante 6mm',
-    image: 'https://picsum.photos/seed/prod16/400/400',
+    image: '/images/products/prod-016.jpg',
     price: 11.50,
     rating: 4.5,
     orders: 16800,
